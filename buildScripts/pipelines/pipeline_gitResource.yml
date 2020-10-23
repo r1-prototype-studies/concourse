@@ -1,0 +1,14 @@
+resources:
+  - name: resource-tutorial-git
+    type: git
+    source:
+      uri: https://github.com/starkandwayne/concourse-tutorial.git
+      branch: develop
+
+jobs:
+  - name: job-git-pipeline
+    public: true
+    plan:
+      - get: resource-tutorial-git
+      - task: task-git-hello-world
+        file: resource-tutorial-git/tutorials/basic/task-hello-world/task_hello_world.yml
