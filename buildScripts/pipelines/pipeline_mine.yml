@@ -1,0 +1,14 @@
+resources:
+  - name: resource-my-git
+    type: git
+    source:
+      uri: https://github.com/r1-prototype-studies/concourse.git
+      branch: main
+
+jobs:
+  - name: job-git-pipeline
+    public: true
+    plan:
+      - get: resource-my-git
+      - task: task-git-hello-world
+        file: resource-my-git/buildScripts/taskScripts/task_showUname.yml

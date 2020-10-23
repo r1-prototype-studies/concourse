@@ -5,6 +5,7 @@
   - [Initial Setup](#initial-setup)
   - [Hello World](#hello-world)
   - [Pipelines](#pipelines)
+  - [Jobs](#jobs)
 - [Reference](#reference)
 
 # Software setups
@@ -74,6 +75,16 @@
 9. Get all the builds
     ```
     fly -t tutorial builds
+    ```
+
+## Jobs
+1. Job can be triggered using the below command
+    ```
+    fly -t tutorial trigger-job -j first_pipeline/job-hello-world
+2. Trigger job along with watch
+    ```
+    fly -t tutorial trigger-job -j GITResource_pipeline/job-git-pipeline -w
+3. 
 
 
 
