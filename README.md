@@ -84,7 +84,7 @@
 2. Trigger job along with watch
     ```
     fly -t tutorial trigger-job -j GITResource_pipeline/job-git-pipeline -w
-3. 
+3. trigger: true can be set to the job
 
 
 
