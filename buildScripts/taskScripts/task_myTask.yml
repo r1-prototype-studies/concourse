@@ -7,4 +7,4 @@ image_resource:
 
 run:
   path: echo
-  args: [Executing my task ---------> Version _______ Alpha]
+  args: [Executing my task ---------> Version _______ Bravo]

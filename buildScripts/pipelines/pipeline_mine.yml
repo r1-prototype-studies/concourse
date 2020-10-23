@@ -10,6 +10,6 @@ jobs:
     public: true
     plan:
       - get: resource-my-git
-          trigger: true
+        trigger: true
       - task: task-git-hello-world
-          file: resource-my-git/buildScripts/taskScripts/task_myTask.yml
+        file: resource-my-git/buildScripts/taskScripts/task_myTask.yml
