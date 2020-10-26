@@ -1,0 +1,21 @@
+resources:
+  - name: resource-my-git
+    type: git
+    source:
+      uri: https://github.com/r1-prototype-studies/concourse.git
+      branch: main
+
+  - name: resource-my-timer
+    type: time
+    source:
+      interval: 2m
+
+jobs:
+  - name: job-timer-pipeline
+    public: true
+    plan:
+      - get: resource-my-git
+      - get: resource-my-timer
+        trigger: true
+      - task: task-git-hello-world
+        file: resource-my-git/buildScripts/taskScripts/task_myTask.yml

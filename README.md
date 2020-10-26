@@ -75,6 +75,9 @@
 9. Get all the builds
     ```
     fly -t tutorial builds
+10. Destroy the pipeline
+    ```
+    fly -t tutorial dp -p temp_pipeline
     ```
 
 ## Jobs
@@ -85,6 +88,8 @@
     ```
     fly -t tutorial trigger-job -j GITResource_pipeline/job-git-pipeline -w
 3. trigger: true can be set to the job
+4. time resource can be used to trigger the job on a time basis
+5. 
 
 
 
@@ -95,3 +100,5 @@
 # Reference 
 * https://concoursetutorial.com/
 * https://github.com/starkandwayne/concourse-tutorial.git
+* https://hub.docker.com/
+* 
