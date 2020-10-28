@@ -9,6 +9,4 @@ export GOPATH=$(pwd)/gopath:$(pwd)/gopath/src/github.com/cloudfoundry-community/
 
 cd gopath/src/github.com/cloudfoundry-community/simple-go-web-app/
 
-echo GOPATH 
-
 go test ./...
