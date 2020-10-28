@@ -3,8 +3,8 @@ resources:
   - name: resource-tutorial
     type: git
     source:
-      uri: https://github.com/starkandwayne/concourse-tutorial.git
-      branch: develop
+      uri: https://github.com/r1-prototype-studies/concourse.git
+      branch: main
 
   - name: resource-app
     type: git
@@ -19,4 +19,4 @@ jobs:
       - get: resource-app
         trigger: true
       - task: web-app-test
-        file: resource-tutorial/tutorials/basic/job-inputs/task_run_tests.yml
+        file: resource-tutorial/buildScripts/taskScripts/task_runTests.yml

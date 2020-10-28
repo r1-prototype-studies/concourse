@@ -3,12 +3,12 @@ platform: linux
 
 image-resource:
   type: docker-image
-  source: {repository: golang, tag:1.9-alpha}
+  source: { repository: golang, tag:1.9-alpha }
 
 inputs:
-  -name: resource-tutorial
-  -name: resource-app
-    path: gopath/src/github.com/cloudfoundry-community/simple-go-web-app
+  - name: resource-tutorial
+  - name: resource-app
+      path: gopath/src/github.com/cloudfoundry-community/simple-go-web-app
 
 run:
   path: resource-tutorial/tutorials/basic/job-inputs/task_run_tests.yml

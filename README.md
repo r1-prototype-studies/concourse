@@ -6,6 +6,7 @@
   - [Hello World](#hello-world)
   - [Pipelines](#pipelines)
   - [Jobs](#jobs)
+- [Troubleshooting](#troubleshooting)
 - [Reference](#reference)
 
 # Software setups
@@ -92,7 +93,11 @@
 5. 
 
 
-
+# Troubleshooting
+1. Check the formatting in the Yaml file for the below error
+    <pre> error converting YAML to JSON: yaml: line 11: mapping values are not allowed in this context</pre>
+    Check whether there is space after "-" in the yml file.
+2. 
 
 
 
