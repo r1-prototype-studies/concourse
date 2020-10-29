@@ -11,4 +11,5 @@ inputs:
     path: gopath/src/github.com/cloudfoundry-community/simple-go-web-app
 
 run:
-  path: resource-tutorial/buildScripts/taskScripts/task_runTests.sh
+  path: /bin/sh
+  args: ["resource-tutorial/buildScripts/taskScripts/task_runTests.sh"]
