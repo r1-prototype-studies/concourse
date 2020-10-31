@@ -16,3 +16,5 @@ jobs:
         file: resource-tutorial/buildScripts/passfiles/task_createFiles.yml
       - task: task_showFiles
         file: resource-tutorial/buildScripts/passfiles/task_showFiles.yml
+        input_mapping:
+          infolder: some-files
