@@ -1,10 +1,6 @@
 ---
 platform: linux
 
-inputs:
-  -name: repo
-  -name: infolder
-
 run:
   path: /bin/sh
   args: [repo/buildScripts/passfiles/showFiles.sh]
