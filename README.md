@@ -1,6 +1,7 @@
 <h1> Concourse </h1>
 
 - [Software setups](#software-setups)
+- [Visual studio code extensions:](#visual-studio-code-extensions)
 - [Steps](#steps)
   - [Initial Setup](#initial-setup)
   - [Hello World](#hello-world)
@@ -13,6 +14,9 @@
 1. [Docker](https://www.docker.com/community-edition)
 2. [Docker Compose](https://docs.docker.com/compose/install/#install-compose) - Didn't install it
 
+# Visual studio code extensions:
+1. Concourse CI Pipeline Editor
+   
 # Steps
 ## Initial Setup
 1. Install the softwares
@@ -95,10 +99,15 @@
 
 # Troubleshooting
 1. Check the formatting in the Yaml file for the below error
-    <pre> error converting YAML to JSON: yaml: line 11: mapping values are not allowed in this context</pre>
-    Check whether there is space after "-" in the yml file.
-2. 
+    >error converting YAML to JSON: yaml: line 11: mapping values are not allowed in this context</>
+    
+    Check whether there is space after "-" in the yml file. 
+2. Issue with shell script path
+    >Backend error: Exit status: 500, message: {"Type":"","Message":"runc exec: exit status 1: exec failed: container_linux.go:345: starting container process caused \"exec: \\\"resource-tutorial/buildScripts/taskScripts/task_runTests.sh\\\": permission denied\"\n","Handle":"","ProcessID":"","Binary":""} 
 
+    Change the scripts execution path as mentioned like here 
+    Refer: https://github.com/concourse/concourse/issues/2161
+3. 
 
 
 

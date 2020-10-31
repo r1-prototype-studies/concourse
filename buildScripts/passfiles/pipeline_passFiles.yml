@@ -1,0 +1,19 @@
+---
+resources:
+  - name: resource-tutorial
+    type: git
+    source:
+      uri: https://github.com/r1-prototype-studies/concourse.git
+      branch: main
+
+jobs:
+  - name: job_passFiles
+    public: true
+    plan:
+      - get: resource-tutorial
+        trigger: true
+      - task: task_createFiles
+        file: resource-tutorial/buildScripts/passFiles/task_createFiles.yml
+      - get: resource-tutorial
+      - task: task_showFiles
+        file: resource-tutorial/buildScripts/passFiles/task_showFiles.yml

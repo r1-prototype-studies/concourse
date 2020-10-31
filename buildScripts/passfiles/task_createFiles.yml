@@ -1,0 +1,17 @@
+---
+platform: linux
+
+image_resource:
+  type: docker-image
+  source: { repository: busybox }
+
+inputs:
+  - name: resource-tutorial
+
+outputs:
+  - name: some-files
+
+run:
+  path: /bin/sh
+  args: [resource-tutorial/buildScripts/passfiles/createFiles.sh]
+  #args: ["resource-tutorial/createFiles.sh"]
