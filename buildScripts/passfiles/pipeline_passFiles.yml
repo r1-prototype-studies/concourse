@@ -13,7 +13,6 @@ jobs:
       - get: resource-tutorial
         trigger: true
       - task: task_createFiles
-        file: resource-tutorial/buildScripts/passFiles/task_createFiles.yml
-      - get: resource-tutorial
+        file: resource-tutorial/buildScripts/passfiles/task_createFiles.yml
       - task: task_showFiles
-        file: resource-tutorial/buildScripts/passFiles/task_showFiles.yml
+        file: resource-tutorial/buildScripts/passfiles/task_showFiles.yml

@@ -6,8 +6,8 @@ image-resource:
   source: { repository: busybox }
 
 inputs:
-  -name: resource-tutorial
-  -name: some-files
+  #-name: resource-tutorial
+  #-name: some-files
 
 run:
   path: /bin/sh
