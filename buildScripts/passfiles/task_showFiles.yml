@@ -1,9 +1,13 @@
 ---
 platform: linux
 
-image-resource:
+image_resource:
   type: docker-image
   source: { repository: busybox }
+
+inputs:
+  - name: repo
+  - name: infolder
 
 run:
   path: /bin/sh
