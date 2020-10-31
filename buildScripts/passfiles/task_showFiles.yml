@@ -5,9 +5,9 @@ image-resource:
   type: docker-image
   source: { repository: busybox }
 
-inputs:
-  #-name: resource-tutorial
-  #-name: some-files
+#inputs:
+#-name: resource-tutorial
+#-name: some-files
 
 run:
   path: /bin/sh
