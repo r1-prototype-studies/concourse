@@ -6,9 +6,9 @@ image-resource:
   source: { repository: busybox }
 
 inputs:
-  -name: resource-tutorial
+  -name: repo
   -name: infolder
 
 run:
   path: /bin/sh
-  args: [resource-tutorial/buildScripts/passfiles/showFiles.sh]
+  args: [repo/buildScripts/passfiles/showFiles.sh]
